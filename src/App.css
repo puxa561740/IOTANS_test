@@ -39,8 +39,10 @@ h3 {
 li {
   list-style-type: none;
   margin-top: 20px;
+  color: #fff;
 }
 p {
   font-size: 1.2rem;
   font-weight: 800;
+  color: #fff;
 }

@@ -15,19 +15,19 @@ const TreeNode=({node})=>{
       {hasChild &&  (
         <div className={`${childVisible ? 'active vis' : 'vis' } `}>
           {childVisible && hasChildLength ? (
-              <span class="material-icons">
+              <span className="material-icons">
                 folder_open
               </span>
             )
            : (
             hasChildLength ? (
-                <span class="material-icons">
+                <span className="material-icons">
                   folder
                 </span>
               )
               
               : (
-                <span class="material-icons">
+                <span className="material-icons">
                     library_books
                 </span>
               )
