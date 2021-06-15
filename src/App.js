@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import dataJSON from './tab/zadanie.json'
 import './App.css';
+import TreeData from './components/TreeData';
 
 function App() {
+ 
+  const data = [dataJSON]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='tree'>
+        <h3 className='tree_header'>Simple Tree</h3>
+        <TreeData data={data}/>   
+        </div> 
     </div>
   );
 }

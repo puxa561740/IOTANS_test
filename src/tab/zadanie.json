@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "sub": [
+    {"name": "folder 1", "sub": [{"name": "file 1 in folder 1", "sub": []}]},
+    {"name": "folder 2", "sub": [{"name": "folder 1 in folder 2", "sub": [
+      {"name": "file 1 folder 1 in folder 2", "sub": []},
+      {"name": "file 2 folder 1 in folder 2", "sub": []}
+    ]}]}
+  ]
+}
