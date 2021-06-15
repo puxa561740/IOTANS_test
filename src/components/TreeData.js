@@ -5,12 +5,11 @@ const TreeData = ({data}) => {
   return (<>
   <div>
     <ul>
-      {data.map(tree => (
+      {data.map((tree, i) => (
         <TreeNode node={tree}/>
       ))}
     </ul>
-  </div>
-      
+  </div>  
   </>)
 };
 

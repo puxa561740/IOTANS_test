@@ -8,10 +8,12 @@ const TreeNode=({node})=>{
   const hasChild = node.sub ? true : false;
   const hasChildLength = node.sub.length > 0 ? true : false;
 
-  return (<li>
+
+  return (
+  <li>
     <div className={`tree_bac ${childVisible && hasChildLength? 'active' : '' } `} onClick={e => {
       setChildVisible(!childVisible);
-      }}>
+      }} >
       {hasChild &&  (
         <div className={`${childVisible ? 'active vis' : 'vis' } `}>
           {childVisible && hasChildLength ? (
@@ -40,7 +42,7 @@ const TreeNode=({node})=>{
     </div>
     {
       hasChild && childVisible && (
-          <TreeData data={node.sub}/>
+          <TreeData data={node.sub} />
       )
     }
   </li>)
